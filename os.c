@@ -2,7 +2,7 @@
 
 int main() {
     int n;
-    printf("Enter number of processes: ");
+    printf("enter number of processes: ");
     scanf("%d", &n);
 
     int at[n];
@@ -11,12 +11,12 @@ int main() {
     int tat[n];
     int wt[n];
 
-    printf("Enter arrival times for each process: ");
+    printf("enter arrival times for each process: ");
     for (int i = 0; i < n; i++) {
         scanf("%d", &at[i]);
     }
 
-    printf("Enter burst times for each process: ");
+    printf("enter burst times for each process: ");
     for (int i = 0; i < n; i++) {
         scanf("%d", &bt[i]);
     }
@@ -49,5 +49,4 @@ int main() {
     printf("Average Completion Time: %.2f\nAverage Turnaround Time: %.2f\nAverage Waiting Time: %.2f",
            avg_ct, avg_tat, avg_wt);
 
-    return 0;
 }
