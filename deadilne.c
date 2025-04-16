@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #define MAX_PROCESSES 10
-#define MAX_TIME 50  // Maximum simulation time
+#define MAX_TIME 50
 
 typedef struct {
     int pid;
