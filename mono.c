@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #define MAX_PROCESSES 10
-#define MAX_TIME 50  // Maximum simulation time
+#define MAX_TIME 50  
 
 typedef struct {
     int pid;
@@ -34,7 +34,7 @@ void rate_monotonic_scheduling(Process p[], int n) {
             p[executed].remaining_time--;
             if (p[executed].remaining_time == 0) {
                 p[executed].next_arrival += p[executed].period;
-                p[executed].remaining_time = p[executed].burst; // Reset for periodic execution
+                p[executed].remaining_time = p[executed].burst; 
             }
         }
         time++;
